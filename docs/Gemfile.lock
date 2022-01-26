@@ -279,7 +279,7 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
-  github-pages (~> 223)
+  github-pages
   webrick (~> 1.7)
 
 BUNDLED WITH

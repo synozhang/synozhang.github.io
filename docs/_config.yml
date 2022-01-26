@@ -1,16 +1,50 @@
 # Site settings
-title: Mauricio Urraco
-description: Jekyll Theme Minimal Resume
-baseurl: "/frontpage" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title: Shengnan Zhang
+subtitle_1: 'MS in Computer Science, NYU Courant'
+subtitle_2: 'MS in Veterinary Medicine, Zhejiang Univ'
+description: 'A multi-talented programmer who also plays well in veterinay and immunology research! (Believe or not, he is good at both writing code and butchering pigs..)'
+url: 'http://joshgerdes.com/jekyll-uno'
+baseurl: ''
+resumeurl: 'https://drive.google.com/file/d/1BW6L3uboZd8uRDBjXbEP-9ZvAiUE-qq6/view?usp=sharing'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+# disable_landing_page: true
 
-# User settings
-username: Shengnan Zhang
-user_description: I'm a Software Engineer from Argentina, always searching for the next challenge; no task is too scary nor too difficult. Lately I have been immersed in world of Giving Circles working with Grapevine, a California based startup trying to improve the world through collaborative giving. I'm the first engineer they hired to work on the platform.
-user_title: Master of Science in Computer Science, NYU Courant.
-email: shengnanz@nyu.com
-# twitter_username: lorem_ipsum
-# github_username:  lorem_ipsum
-# gplus_username:  lorem_ipsum
+author:
+  name: 'Shengnan Zhang'
+  email: shengnanz@nyu.edu
+  #twitter_username: joshgerdes
+  #facebook_username: joshgerdes
+  github_username:  synozhang
+  linkedin_username:  shengnanz
+  csdn_username: HLJs_Cookbook
 
-exclude: ['package.json', 'src' , 'node_modules']
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+
+
